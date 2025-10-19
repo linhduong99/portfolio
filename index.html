@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duong Ba Linh - Portfolio</title>
+    <!-- link to fontawesome for inserting social media icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link to css file -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar">
+      <a href="index.html" class="logo">LinhDuong</a>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <!-- <a href="#projects">Projects</a> -->
+        <a href="#contacts">Contacts</a>
+      </nav>
+
+      <button class="hamburger" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="mobile-menu">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <!-- <a href="#projects">Projects</a> -->
+        <a href="#contacts">Contacts</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Duong Ba Linh</h1>
+        <h1>Full-Stack Developer</h1>
+        <p>
+          Passionate full-stack developer with 4+ years of experience building robust web applications and cloud-native solutions. Strong foundation in mathematics and problem-solving with expertise across the entire development stack.
+        </p>
+        <p class="highlight">Specializing in scalable architecture, cloud infrastructure, and delivering high-performance applications that drive business value</p>
+        <a href="#contacts" class="cta-button">Let's Connect</a>
+      </div>
+      <div class="hero-image">
+        <img src="files/avatar.jpg" alt="Profile" class="profile-img" />
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2>Technical Expertise</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <i class="fas fa-server"></i>
+          <h3>Backend Development</h3>
+          <p>
+            <strong>Languages & Frameworks:</strong> Python, Django, Django REST Framework<br />
+            <strong>Databases:</strong> PostgreSQL, MySQL, Redis (Caching & Queue)<br />
+            <strong>APIs & Real-time:</strong> RESTful APIs, WebSockets, Django Channels<br />
+            <strong>Background Jobs:</strong> Celery, RabbitMQ, Task Scheduling
+          </p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-aws"></i>
+          <h3>Cloud & DevOps (AWS)</h3>
+          <p>
+            <strong>Compute & Serverless:</strong> Lambda, EC2, ECS, Fargate, API Gateway<br />
+            <strong>Storage & Database:</strong> S3, RDS, DynamoDB, ElastiCache<br />
+            <strong>Messaging & Events:</strong> SQS, EventBridge<br />
+            <strong>Networking & CDN:</strong> CloudFront, Route 53, VPC, Load Balancers<br />
+            <strong>DevOps:</strong>  Docker, GitLab CI/CD, GitHub Actions
+          </p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-code"></i>
+          <h3>Frontend Development</h3>
+          <p>
+            <strong>Frameworks:</strong> React.js, Next.js (App & Pages Router)<br />
+            <strong>State Management:</strong> Redux Toolkit, Redux Saga, Zustand, React Query, Context API<br />
+            <strong>Languages & Styling:</strong> TypeScript, JavaScript (ES6+), Material UI, Tailwind CSS, Styled Components, SCSS<br />
+            <strong>Tools:</strong> Webpack, Vite, ESLint, Prettier, SonarQube
+          </p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Education & Certifications</h3>
+          <p>
+            Bachelor of Engineering in Mechatronics (HUST, 2017-2021),<br />
+            AWS Certified Developer Associate (In Progress),<br />
+            Frontend Mastery (React & Next.js) — Online Bootcamp,<br />
+            Advanced Mathematics, Data Structures & Algorithms
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <h2>Professional Experience</h2>
+      <div class="experience-timeline">
+        <div class="experience-item">
+          <div class="experience-period">Mar 2025 – Present</div>
+          <div class="experience-content">
+            <h3>Full-Stack Developer — OmiGroup (OmiNext)</h3>
+            <p>Developing a comprehensive healthcare management platform for prescription processing, patient interviews, treatment planning, and medical documentation using React.js and AWS serverless architecture.</p>
+            <ul>
+              <li>Built end-to-end prescription intake system with automated validation and processing using AWS Lambda and API Gateway</li>
+              <li>Created responsive React.js dashboard with Redux Toolkit for managing patient records, prescriptions, and treatment workflows</li>
+              <li>Designed automated document generation system for treatment plans, medication instructions, and medical reports with PDF export functionality</li>
+              <li>Built event-driven notification system using SQS and SNS for appointment reminders, prescription updates, and treatment milestones</li>
+              <li>Optimized application performance with AWS CloudFront CDN, S3 for medical document storage, and ElastiCache for session management</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="experience-period">Sep 2024 – Feb 2025</div>
+          <div class="experience-content">
+            <h3>Backend Developer — Freelancer</h3>
+            <p>Developed and maintained scalable APIs and real-time communication systems for mental health support platform using Django, DRF, Celery, and Redis.</p>
+            <ul>
+              <li>Integrated Firebase Authentication and Django Channels for real-time session updates and secure chat features</li>
+              <li>Implemented background task processing with Celery and Redis for email notifications and scheduled jobs</li>
+              <li>Optimized database queries and API response times, reducing average response time by 40%</li>
+              <li>Collaborated with cross-functional teams in an Agile environment to deliver features on tight timelines</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="experience-period">Jun 2021 – Jul 2024</div>
+          <div class="experience-content">
+            <h3>Full-Stack Developer — QSOFT</h3>
+            <p>Led development of internal tools and client-facing applications using Django backend with React/Next.js frontend, serving 10,000+ active users.</p>
+            <ul>
+              <li>Built advanced AI-powered image processing pipeline using OpenCV, RemoveBG, RealESRGAN, LAMA, and NVIDIA Triton Inference Server</li>
+              <li>Developed dynamic admin dashboards and customer-facing interfaces with Redux, Zustand, and modern state management patterns</li>
+              <li>Implemented comprehensive CI/CD pipelines using GitHub Actions, Docker, and automated testing frameworks</li>
+              <li>Mentored junior developers on best practices for code quality, testing, and architectural design patterns</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- <section id="projects" class="projects">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="files/project1.jpg" alt="Learning Web Application" />
+          </div>
+          <div class="project-content">
+            <h3>Learning Web Application</h3>
+            <p>Full-stack learning platform with user authentication (JWT), course tracking, and progress reports</p>
+            <div class="project-tech">
+              <span>Vue.js</span>
+              <span>Django</span>
+              <span>JWT</span>
+              <span>REST API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="files/project2.jpg" alt="E-Commerce Platform" />
+          </div>
+          <div class="project-content">
+            <h3>E-Commerce Platform (Demo)</h3>
+            <p>Full-featured storefront and admin portal with custom cart logic and Stripe simulation</p>
+            <div class="project-tech">
+              <span>Next.js</span>
+              <span>Redux</span>
+              <span>Tailwind CSS</span>
+              <span>Stripe</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="contacts" id="contacts">
+      <p>© 2025 Duong Ba Linh. All rights reserved.</p>
+      <div class="social-links">
+        <h3 class="footer-title">Contact Me</h3>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> linhduong631@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +84 367 029 562</p>
+          <p><i class="fas fa-map-marker-alt"></i> Hanoi, Vietnam</p>
+        </div>
+        <div class="icon-group">
+          <a href="https://github.com/linhduong99" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/linh-duong-724776250/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://wa.me/84367029562">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="mailto:linhduong631@gmail.com" aria-label="Send email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- link to javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
